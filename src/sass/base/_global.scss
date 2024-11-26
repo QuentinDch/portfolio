@@ -1,0 +1,19 @@
+// _global.scss
+@use "@variables" as *;
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  min-height: 100%;
+  overflow-y: scroll;
+  overscroll-behavior: none;
+  color: $black-color;
+  background-color: $white-color;
+  height: 100dvh;
+}

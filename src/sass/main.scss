@@ -1,0 +1,11 @@
+// main.scss
+
+@use "./utils/variables";
+@use "./utils/mixins";
+@use "./utils/helpers";
+
+@use "./base/global";
+@use "./base/reset";
+@use "./base/typography";
+
+@use "./page/home";
