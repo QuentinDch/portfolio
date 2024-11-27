@@ -1,0 +1,31 @@
+// _profile.scss
+@use "@variables" as *;
+
+.profile {
+  color: $text-color;
+  font-size: 16rem;
+  line-height: 24rem;
+  letter-spacing: -0.02em;
+
+  &__title {
+    font-size: 40rem;
+    line-height: 1.25em;
+    margin-bottom: 26rem;
+
+    @media screen and (max-width: 767px) {
+      font-size: 25rem;
+      line-height: 1.5em;
+      margin-bottom: 32rem;
+    }
+  }
+
+  &__text {
+    max-width: 100%;
+    margin-bottom: 93.75rem;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 110rem;
+      line-height: 26.25rem;
+    }
+  }
+}
