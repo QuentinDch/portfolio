@@ -1,0 +1,9 @@
+// header.scss
+@use "@variables" as *;
+
+.header {
+  user-select: none;
+  padding-block: 16rem;
+  margin-bottom: 25rem;
+  border-bottom: 1px solid $border-color;
+}

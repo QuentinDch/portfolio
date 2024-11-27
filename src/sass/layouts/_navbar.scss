@@ -1,0 +1,21 @@
+// _navbar.scss
+@use "@variables" as *;
+@use "@mixins" as *;
+
+.navbar {
+  @include flex-between;
+  font-size: 16rem;
+  line-height: 24rem;
+  letter-spacing: -0.02em;
+  color: $text-color;
+
+  &__menu {
+    display: flex;
+    gap: 50rem;
+    flex-direction: row;
+
+    @media screen and (max-width: 767px) {
+      gap: 17rem;
+    }
+  }
+}
