@@ -27,12 +27,19 @@
   counter-reset: comptlist;
 }
 
+.project__list:has(.project__item:hover) .project__item:not(:hover) {
+  filter: blur(2px);
+}
+
 .project__item {
   position: relative;
+  transition-property: filter;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project__item::after {
-  content: counter(comptlist, decimal-leading-zero);
+  content: "(" counter(comptlist, decimal-leading-zero) ")";
   counter-increment: comptlist;
   display: block;
   position: absolute;
