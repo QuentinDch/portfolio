@@ -1,0 +1,51 @@
+// _project.scss
+@use "@variables" as *;
+
+.project {
+  color: $text-color;
+  user-select: none;
+  font-size: 17rem;
+  line-height: 26.25rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 100rem;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 85rem;
+  }
+
+  &__title {
+    font-weight: 500;
+    margin-bottom: 25rem;
+    text-transform: capitalize;
+  }
+}
+
+.project__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12.75rem;
+  counter-reset: comptlist;
+}
+
+.project__item {
+  position: relative;
+}
+
+.project__item::after {
+  content: counter(comptlist, decimal-leading-zero);
+  counter-increment: comptlist;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 10rem;
+}
+
+.project__link {
+  position: absolute;
+  inset: 0;
+}
+
+.project__description {
+  color: rgba($text-color, 0.4);
+}

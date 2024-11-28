@@ -3,9 +3,14 @@
 
 .profile {
   color: $text-color;
-  font-size: 16rem;
+  font-size: 17rem;
   line-height: 24rem;
   letter-spacing: -0.02em;
+  margin-bottom: 93.75rem;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 83.75rem;
+  }
 
   &__title {
     font-size: 40rem;
@@ -15,16 +20,14 @@
     @media screen and (max-width: 767px) {
       font-size: 25rem;
       line-height: 1.5em;
-      margin-bottom: 32rem;
+      margin-bottom: 30rem;
     }
   }
 
   &__text {
     max-width: 100%;
-    margin-bottom: 93.75rem;
 
     @media screen and (max-width: 767px) {
-      margin-bottom: 110rem;
       line-height: 26.25rem;
     }
   }

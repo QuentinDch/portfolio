@@ -4,7 +4,7 @@
 
 .navbar {
   @include flex-between;
-  font-size: 16rem;
+  font-size: 17rem;
   line-height: 24rem;
   letter-spacing: -0.02em;
   color: $text-color;
@@ -22,8 +22,8 @@
 
 .navbar__menu-item {
   transition-property: opacity;
+  transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 500ms;
 }
 .navbar__menu-item:hover {
   opacity: 0.5;
