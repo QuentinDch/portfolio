@@ -2,20 +2,7 @@
 @use "@variables" as *;
 
 .project {
-  color: $text-color;
-  user-select: none;
-  font-size: 17rem;
-  line-height: 26.25rem;
-  letter-spacing: -0.02em;
-  margin-bottom: 100rem;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 85rem;
-  }
-
   &__title {
-    font-weight: 500;
-    margin-bottom: 25rem;
     text-transform: capitalize;
   }
 }
