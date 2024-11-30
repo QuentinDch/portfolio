@@ -16,6 +16,7 @@ export default defineConfig({
     alias: {
       "@variables": path.resolve(__dirname, "src/sass/utils/variables.scss"),
       "@mixins": path.resolve(__dirname, "src/sass/utils/mixins.scss"),
+      "@typography": path.resolve(__dirname, "src/sass/base/typography.scss"),
     },
   },
   css: {
