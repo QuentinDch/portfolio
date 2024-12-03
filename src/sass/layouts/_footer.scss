@@ -1,0 +1,15 @@
+// _footer.scss
+@use "@variables" as *;
+@use "@mixins" as *;
+
+.footer {
+  color: $text-color;
+  user-select: none;
+  font-size: 16rem;
+  line-height: 26.25rem;
+  letter-spacing: -0.02em;
+
+  @include flex-between;
+  padding-block: 25rem;
+  border-top: 1px solid $border-color;
+}
