@@ -19,6 +19,17 @@
   }
 }
 
+.cube {
+  display: block;
+  margin-top: 5.25em;
+  margin-bottom: 1.2em;
+  margin-left: 0.06em;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 2px;
+  background-color: #084d6d;
+}
+
 .link {
   display: inline-flex;
   overflow: hidden;

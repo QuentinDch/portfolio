@@ -1,0 +1,45 @@
+// _contact.scss
+@use "@variables" as *;
+
+.contact {
+  &__emailContainer {
+    display: inline-flex;
+  }
+}
+
+.copy-button {
+  cursor: default;
+}
+
+.email-info {
+  display: flex;
+}
+
+.clipboard-status {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  transform: translateX(-20px);
+  color: #084d6d;
+  opacity: 0;
+  margin-left: 20rem;
+  font-size: 14rem;
+  transition-property: transform, opacity;
+  transition-duration: 250ms, 350ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email-link {
+  cursor: pointer;
+  position: relative;
+  height: max-content;
+}
+
+.email-link:hover + .clipboard-status {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.copied-status {
+  opacity: 0;
+}
