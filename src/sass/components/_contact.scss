@@ -13,6 +13,7 @@
 
 .email-info {
   display: flex;
+  overflow: hidden;
 }
 
 .clipboard-status {
@@ -40,6 +41,26 @@
   opacity: 1;
 }
 
+.copy-text {
+  transform: translateY(0);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.copy-button.clicked .copy-text {
+  transform: translateY(-100%) rotate(0.01deg);
+}
+
 .copied-status {
   opacity: 0;
+  transform: translateY(0);
+  transition-property: transform, opacity;
+  transition-duration: 250ms, 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.copy-button.clicked .copied-status {
+  opacity: 1;
+  transform: translateY(-100%);
 }
