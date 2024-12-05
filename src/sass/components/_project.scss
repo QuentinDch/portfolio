@@ -43,7 +43,39 @@
   inset: 0;
 }
 
-.project__description {
+.project__item-description {
   color: rgba($text-color, 0.4);
   margin-bottom: 10rem;
+  position: relative;
+}
+
+.project__item-description::before {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 2px;
+  background-color: #084d6d;
+  top: -50%;
+  left: 0;
+  transform: translateY(-50%);
+  opacity: 0;
+
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project__item:hover .project__item-description::before {
+  opacity: 1;
+}
+
+.project__item-title {
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project__item:hover .project__item-title {
+  transform: translateX(20px);
 }
