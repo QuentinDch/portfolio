@@ -11,7 +11,7 @@
 
   &__menu {
     display: flex;
-    gap: 20rem;
+    gap: 18rem;
     flex-direction: row;
 
     @media screen and (max-width: 767px) {
@@ -26,6 +26,10 @@
   @media screen and (max-width: 767px) {
     padding-right: 0;
   }
+}
+
+.navbar__menu-item a {
+  text-transform: capitalize;
 }
 
 .navbar__menu-item::before {
