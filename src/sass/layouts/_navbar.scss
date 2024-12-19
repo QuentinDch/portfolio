@@ -7,7 +7,7 @@
   font-size: 17rem;
   line-height: 24rem;
   letter-spacing: -0.02em;
-  color: $text-color;
+  color: $color-light;
 
   &__menu {
     display: flex;
@@ -38,7 +38,7 @@
   width: 10rem;
   height: 10rem;
   border-radius: 2px;
-  background-color: #084d6d;
+  background-color: $color-accent;
   right: 0;
   bottom: 0.4em;
   left: auto;

@@ -3,7 +3,7 @@
 @use "@mixins" as *;
 
 .footer {
-  color: $text-color;
+  color: $color-light;
   user-select: none;
   font-size: 16rem;
   line-height: 26.25rem;
@@ -11,5 +11,5 @@
 
   @include flex-between;
   padding-block: 25rem;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid $color-medium-dark;
 }

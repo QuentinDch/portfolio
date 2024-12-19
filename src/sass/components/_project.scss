@@ -24,7 +24,7 @@
   transition-property: filter;
   transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid $color-medium-dark;
 }
 
 .project__item::after {
@@ -44,7 +44,7 @@
 }
 
 .project__item-description {
-  color: rgba($text-color, 0.4);
+  color: $color-grey;
   margin-bottom: 10rem;
   position: relative;
 }
@@ -55,7 +55,7 @@
   width: 10rem;
   height: 10rem;
   border-radius: 2px;
-  background-color: #084d6d;
+  background-color: $color-accent;
   top: -50%;
   left: 0;
   transform: translateY(-50%);

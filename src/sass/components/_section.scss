@@ -2,7 +2,7 @@
 @use "@variables" as *;
 
 .section {
-  color: $text-color;
+  color: $color-light;
   user-select: none;
   font-size: 16rem;
   line-height: 26.25rem;
@@ -27,7 +27,7 @@
   width: 10rem;
   height: 10rem;
   border-radius: 2px;
-  background-color: #084d6d;
+  background-color: $color-accent;
 }
 
 .link {
@@ -41,7 +41,7 @@
   position: absolute;
   left: 0;
   width: 100%;
-  background-color: $text-color;
+  background-color: $color-light;
   will-change: transform;
   transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -65,42 +65,3 @@
   transform: translate3d(0, 0, 0);
   transition: transform 1000ms cubic-bezier(0.19, 1, 0.22, 1) 100ms;
 }
-
-// .crosshair-wrap {
-//   padding: 16px;
-//   position: relative;
-//   inset: 0;
-// }
-// .cross {
-//   width: 8rem;
-//   height: 8rem;
-//   position: absolute;
-// }
-// .cross1 {
-//   inset: 0% auto auto 0%;
-//   border-top: 1px solid;
-//   border-left: 1px solid;
-//   border-top-width: 2px;
-//   border-left-width: 2px;
-// }
-// .cross2 {
-//   inset: 0% 0% auto auto;
-//   border-top: 1px solid;
-//   border-right: 1px solid;
-//   border-top-width: 2px;
-//   border-right-width: 2px;
-// }
-// .cross3 {
-//   inset: auto 0% 0% auto;
-//   border-bottom: 1px solid;
-//   border-right: 1px solid;
-//   border-bottom-width: 2px;
-//   border-right-width: 2px;
-// }
-// .cross4 {
-//   inset: auto auto 0% 0%;
-//   border-bottom: 1px solid;
-//   border-left: 1px solid;
-//   border-bottom-width: 2px;
-//   border-left-width: 2px;
-// }

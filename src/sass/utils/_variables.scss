@@ -1,7 +1,17 @@
 // Variables
 
 // Color
-$black-color: #000000;
-$white-color: #fff;
-$text-color: #2b2b2b;
-$border-color: #00000014;
+// Main colors
+$color-dark: #151419; // Couleur sombre pour les arrière-plans ou le texte principal
+$color-dark-alt: #1b1b1e; // Variante sombre pour les éléments secondaires
+$color-medium-dark: #262626; // Pour les bordures ou éléments séparateurs
+
+// Light color
+$color-light: #fbfbfb; // Couleur de fond claire pour le contenu
+
+// Secondary colors
+$color-grey: #878787; // Gris pour le texte secondaire ou les éléments moins importants
+
+// Accent color
+$color-accent: #f56e0f; // Accent color (pour les boutons, liens, etc.)
+$color-accent-blue: #084d6d;
