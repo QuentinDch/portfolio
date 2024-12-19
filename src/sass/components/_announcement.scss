@@ -1,0 +1,22 @@
+// _announcement.scss
+@use "@variables" as *;
+
+.announcement-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  padding: 5rem 25rem;
+  min-height: 40px;
+  background-color: $color-dark-alt;
+
+  transition-property: opacity, translate;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.announcement-bar__text {
+  text-align: center;
+  font-size: 15rem;
+  max-width: 100%;
+}
