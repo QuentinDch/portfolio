@@ -1,0 +1,34 @@
+// _annoncementSmartphone.scss
+@use "@variables" as *;
+
+.announcement-title-smartphone {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: block;
+    font-size: 15rem;
+    line-height: normal;
+    position: relative;
+    z-index: 10;
+    margin-left: 20rem;
+  }
+}
+
+.announcement-title-smartphone::before {
+  content: "";
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 2px;
+  background-color: $color-accent-green;
+  top: 50%;
+  left: -15%;
+  transform: translate(50%, -50%);
+}
+
+.title-smartphone {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 30rem;
+  }
+}

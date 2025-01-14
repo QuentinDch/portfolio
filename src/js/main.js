@@ -7,6 +7,7 @@ import "../sass/main.scss";
 import { initializeFooterDate } from "./components/dateUtils.js";
 import { clipboard } from "./components/clipboard.js";
 import { annoucementBar } from "./components/annoucementBar.js";
+import { initHamburgerButton } from "./components/menuToggler.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Portfolio loaded successfully!");
@@ -14,4 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initializeFooterDate();
   clipboard();
   annoucementBar();
+  initHamburgerButton();
 });
