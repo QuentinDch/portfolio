@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,6 +43,9 @@
             <a href="/" aria-label="Back to homepage">Lorem, ipsum.</a>
           </h1>
           <ul class="navbar__menu" id="main-menu">
+            <li class="navbar__menu-item mobile-only">
+              <a href="/" aria-label="Back to homepage">home</a>
+            </li>
             <li class="navbar__menu-item">
               <a href="#project">work</a>
             </li>
@@ -52,8 +55,76 @@
             <li class="navbar__menu-item">
               <a href="#contact">contact</a>
             </li>
+            <li class="mobile-only"><span>Get in touch</span></li>
+            <li class="mobile-only">
+              <a
+                href="mailto:info@hello.co"
+                aria-label="Send an email to info@hello.co"
+                >info@hello.co</a
+              >
+            </li>
+            <li class="mobile-only">
+              <ul class="navbar__socials">
+                <li>
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit my LinkedIn profile"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 17"
+                      class="sm-icon"
+                    >
+                      <path
+                        d="M13.6335 13.8756H11.2844V10.2329C11.2844 9.36433 11.2687 8.24615 10.0626 8.24615C8.83906 8.24615 8.65186 9.19254 8.65186 10.1697V13.8753H6.30272V6.38463H8.55789V7.40831H8.58946C8.81515 7.02623 9.14128 6.71191 9.53311 6.49883C9.92494 6.28575 10.3678 6.18189 10.8145 6.19831C13.1955 6.19831 13.6345 7.74897 13.6345 9.76629L13.6335 13.8756ZM3.65212 5.36071C3.3825 5.36075 3.11891 5.28164 2.8947 5.13336C2.67049 4.98508 2.49574 4.7743 2.39252 4.52767C2.28929 4.28105 2.26224 4.00965 2.31479 3.74781C2.36734 3.48596 2.49714 3.24542 2.68776 3.05662C2.87838 2.86781 3.12126 2.73921 3.38569 2.68708C3.65012 2.63495 3.92422 2.66163 4.17334 2.76375C4.42245 2.86587 4.63539 3.03884 4.78522 3.26079C4.93506 3.48274 5.01506 3.74369 5.01511 4.01066C5.01514 4.18792 4.97991 4.36345 4.91143 4.52723C4.84295 4.691 4.74257 4.83982 4.61601 4.96519C4.48944 5.09055 4.33917 5.19 4.17378 5.25787C4.0084 5.32573 3.83114 5.36067 3.65212 5.36071ZM4.82668 13.8756H2.47511V6.38463H4.82668V13.8756ZM14.8046 0.50107H1.29467C0.988037 0.497643 0.692555 0.614897 0.473184 0.827064C0.253812 1.03923 0.128498 1.32896 0.124756 1.63257V15.065C0.12837 15.3687 0.253611 15.6586 0.472974 15.871C0.692338 16.0834 0.987885 16.2009 1.29467 16.1977H14.8046C15.112 16.2015 15.4084 16.0843 15.6286 15.872C15.8489 15.6596 15.9749 15.3693 15.9792 15.065V1.6316C15.9748 1.32738 15.8486 1.03733 15.6284 0.825169C15.4082 0.613006 15.1119 0.496088 14.8046 0.5001"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit my Twitter profile"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 16 15"
+                      class="sm-icon"
+                    >
+                      <path
+                        d="M12.5944 0H15.0361L9.70281 6.36667L16 15H11.0522L7.19679 9.76667L2.76305 15H0.321285L6.04016 8.2L0 0H5.07631L8.57831 4.8L12.5944 0ZM11.7269 13.4667H13.0763L4.33735 1.43333H2.85944L11.7269 13.4667Z"
+                        fill="currentColor"
+                      /></svg
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Visit my GitHub profile"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 25 25"
+                      class="sm-icon"
+                      role="img"
+                    >
+                      <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
           </ul>
-          <span class="announcement-title-smartphone">
+          <span class="announcement mobile-only">
             Available for a Work-Study <br />
             Opportunity
           </span>
@@ -73,7 +144,7 @@
         </nav>
       </header>
       <section class="section profile">
-        <h1 class="title-smartphone">Lorem, ipsum.</h1>
+        <h1 class="title mobile-only">Lorem, ipsum.</h1>
         <h2 class="section__title profile__title">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet.
         </h2>

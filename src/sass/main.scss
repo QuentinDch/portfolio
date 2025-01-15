@@ -11,6 +11,7 @@
 @use "./layouts/container";
 @use "./layouts/header";
 @use "./layouts/navbar";
+@use "./layouts/navbarMobile";
 @use "./layouts/footer";
 
 @use "./components/section";
@@ -19,5 +20,5 @@
 @use "./components/about";
 @use "./components/contact";
 @use "./components/announcement";
-@use "./components/annoncementSmartphone";
+@use "./components/annoncementMobile";
 @use "./components/menuToggler";

@@ -1,4 +1,5 @@
 // Helpers
+@use "@mixins" as *;
 
 .w-inline-block {
   max-width: 100%;
@@ -15,4 +16,17 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
   white-space: nowrap;
+}
+
+.mobile-only {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
+
+.sm-icon {
+  @include flex-center;
+  width: 15rem;
+  height: 15rem;
 }

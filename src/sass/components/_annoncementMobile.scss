@@ -1,10 +1,8 @@
-// _annoncementSmartphone.scss
+// _annoncementMobile.scss
 @use "@variables" as *;
 
-.announcement-title-smartphone {
-  display: none;
+.announcement {
   @media screen and (max-width: 767px) {
-    display: block;
     font-size: 15rem;
     line-height: normal;
     position: relative;
@@ -13,7 +11,7 @@
   }
 }
 
-.announcement-title-smartphone::before {
+.announcement::before {
   content: "";
   position: absolute;
   width: 10rem;
@@ -25,10 +23,8 @@
   transform: translate(50%, -50%);
 }
 
-.title-smartphone {
-  display: none;
+.title {
   @media screen and (max-width: 767px) {
-    display: block;
     margin-bottom: 30rem;
   }
 }
