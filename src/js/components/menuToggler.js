@@ -6,23 +6,28 @@ export function initHamburgerButton() {
   const navLinks = document.querySelectorAll(".navbar__menu a");
 
   togglerButton.addEventListener("click", () => {
-    togglerButton.classList.toggle("active");
-    navigation.classList.toggle("active");
+    const expanded = togglerButton.getAttribute("aria-expanded") === "true";
+    togglerButton.setAttribute("aria-expanded", !expanded);
+    togglerButton.classList.toggle("active", !expanded);
+    navigation.classList.toggle("active", !expanded);
   });
 
   navLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
-      event.preventDefault();
+      const targetId = link.getAttribute("href");
 
-      togglerButton.classList.remove("active");
-      navigation.classList.remove("active");
+      if (targetId.startsWith("#")) {
+        event.preventDefault();
 
-      setTimeout(() => {
-        const targetId = link.getAttribute("href");
-        document
-          .querySelector(targetId)
-          ?.scrollIntoView({ behavior: "smooth" });
-      }, 300);
+        togglerButton.classList.remove("active");
+        navigation.classList.remove("active");
+
+        setTimeout(() => {
+          document
+            .querySelector(targetId)
+            ?.scrollIntoView({ behavior: "smooth" });
+        }, 300);
+      }
     });
   });
 }

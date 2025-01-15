@@ -42,11 +42,7 @@
           <h1 class="navbar__title">
             <a href="/" aria-label="Back to homepage">Lorem, ipsum.</a>
           </h1>
-          <span class="announcement-title-smartphone">
-            Available for a Work-Study <br />
-            Opportunity
-          </span>
-          <ul class="navbar__menu">
+          <ul class="navbar__menu" id="main-menu">
             <li class="navbar__menu-item">
               <a href="#project">work</a>
             </li>
@@ -57,10 +53,16 @@
               <a href="#contact">contact</a>
             </li>
           </ul>
+          <span class="announcement-title-smartphone">
+            Available for a Work-Study <br />
+            Opportunity
+          </span>
           <button
             class="navbar__toggler"
             type="button"
             aria-label="toggle curtain navigation"
+            aria-expanded="false"
+            aria-controls="main-menu"
           >
             <span class="navbar__toggler-text">menu</span>
             <span class="navbar__toggler-box">
