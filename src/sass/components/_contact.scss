@@ -20,14 +20,13 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  transform: translateX(-10px);
   color: $color-accent;
-  opacity: 0;
   margin-left: 20rem;
   font-size: 14rem;
-  transition-property: transform, opacity;
-  transition-duration: 250ms, 350ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  clip-path: inset(0 100% 0 0);
+  transition-property: clip-path;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
 }
 
 .email-link {
@@ -37,30 +36,32 @@
 }
 
 .email-link:hover + .clipboard-status {
-  transform: translateX(0);
-  opacity: 1;
+  clip-path: inset(0px);
+  transition-duration: 350ms;
 }
 
 .copy-text {
   transform: translateY(0);
   transition-property: transform;
-  transition-duration: 250ms;
+  transition-duration: 0ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .copy-button.clicked .copy-text {
-  transform: translateY(-100%) rotate(0.01deg);
+  transform: translateY(-100%);
+  transition-duration: 250ms;
 }
 
 .copied-status {
   opacity: 0;
   transform: translateY(0);
   transition-property: transform, opacity;
-  transition-duration: 250ms, 250ms;
+  transition-duration: 0ms, 0ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .copy-button.clicked .copied-status {
   opacity: 1;
   transform: translateY(-100%);
+  transition-duration: 250ms, 250ms;
 }
