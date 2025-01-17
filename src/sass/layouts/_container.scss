@@ -1,11 +1,12 @@
 // _container.scss
 
 .container {
-  padding: 100rem 20% 0;
+  padding: 80rem 20% 0;
   @media screen and (max-width: 1024px) {
-    padding: 80rem;
+    padding: 70rem;
+    padding-bottom: 0;
   }
   @media screen and (max-width: 767px) {
-    padding: 20rem 5% 0;
+    padding: 15rem 5% 0;
   }
 }
