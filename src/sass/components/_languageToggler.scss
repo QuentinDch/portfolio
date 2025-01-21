@@ -1,0 +1,38 @@
+// _languageToggler.scss
+@use "@variables" as *;
+@use "@mixins" as *;
+
+.lng-wrapper {
+  position: absolute;
+  right: -5%;
+  transform: translateX(100%);
+  @media screen and (max-width: 1024px) {
+    right: 0;
+  }
+  @media screen and (max-width: 767px) {
+    position: relative;
+    right: 0;
+    transform: translate(0);
+    margin-top: auto;
+  }
+
+  &-list {
+    display: flex;
+  }
+}
+
+.lng-wrapper__button {
+  margin-inline: 5rem;
+}
+
+.lng-wrapper__button span {
+  text-transform: capitalize;
+  color: $color-grey;
+  @media screen and (max-width: 767px) {
+    font-size: 20rem;
+  }
+}
+
+.lng-wrapper__button.active span {
+  color: inherit;
+}

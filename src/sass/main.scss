@@ -1,24 +1,25 @@
 // main.scss
 
-@use "./utils/variables";
-@use "./utils/mixins";
 @use "./utils/helpers";
+@use "./utils/mixins";
+@use "./utils/variables";
 
 @use "./base/global";
 @use "./base/reset";
 @use "./base/typography";
 
 @use "./layouts/container";
+@use "./layouts/footer";
 @use "./layouts/header";
 @use "./layouts/navbar";
 @use "./layouts/navbarMobile";
-@use "./layouts/footer";
 
-@use "./components/section";
+@use "./components/about";
+@use "./components/annoncementMobile";
+@use "./components/announcement";
+@use "./components/contact";
+@use "./components/languageToggler";
+@use "./components/menuToggler";
 @use "./components/profile";
 @use "./components/project";
-@use "./components/about";
-@use "./components/contact";
-@use "./components/announcement";
-@use "./components/annoncementMobile";
-@use "./components/menuToggler";
+@use "./components/section";
