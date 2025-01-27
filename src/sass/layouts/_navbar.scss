@@ -8,6 +8,7 @@
   line-height: 24rem;
   letter-spacing: -0.02em;
   color: $color-light;
+  position: relative;
 
   &__title {
     @media screen and (max-width: 767px) {
@@ -19,7 +20,6 @@
     display: flex;
     gap: 18rem;
     flex-direction: row;
-    position: relative;
   }
 }
 
