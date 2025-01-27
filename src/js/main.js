@@ -8,6 +8,7 @@ import { initializeFooterDate } from "./components/dateUtils.js";
 import { clipboard } from "./components/clipboard.js";
 import { annoucementBar } from "./components/annoucementBar.js";
 import { initHamburgerButton } from "./components/menuToggler.js";
+import { languageToggler } from "./components/languageToggler.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Portfolio loaded successfully!");
@@ -16,4 +17,5 @@ document.addEventListener("DOMContentLoaded", () => {
   clipboard();
   annoucementBar();
   initHamburgerButton();
+  languageToggler();
 });
