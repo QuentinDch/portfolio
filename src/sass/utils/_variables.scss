@@ -22,3 +22,12 @@ $color-black: #090909;
 $color-white: #ffffff;
 $color-medium: #7b7b7b;
 $color-accent-b: #ff5c00;
+
+// Variant
+$color-dark: oklch(0.141 0.005 285.823);
+$color-dark-alt: oklch(22.34% 0.006 285.92);
+$color-medium-dark: oklch(0.274 0.006 286.033);
+$color-light: oklch(100% 0 0);
+$color-grey: oklch(0.705 0.015 286.067);
+$color-accent: oklch(68.37% 0.212 40.59);
+$color-accent-green: oklch(89.96% 0.235 136.1);
