@@ -36,6 +36,11 @@ export function languageToggler() {
       const translation =
         language === "fr" ? element.dataset.langFr : element.dataset.langEn;
       element.textContent = translation || element.textContent; // Gérer le cas où il n'y a pas de traduction disponible
+
+      const parentLink = element.closest("a");
+      if (parentLink) {
+        parentLink.setAttribute("data-content", translation);
+      }
     });
   }
 }
