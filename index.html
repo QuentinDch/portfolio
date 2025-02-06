@@ -82,7 +82,7 @@
                 ><span data-lang-en="contact" data-lang-fr="contact"></span
               ></a>
             </li>
-            <li class="lng-wrapper">
+            <li class="lng-wrapper" title="change the language">
               <ul class="lng-wrapper-list">
                 <li><p class="sr-only">Change language:</p></li>
                 <li>
@@ -212,7 +212,11 @@
         </p>
       </section>
       <section class="section project" id="project">
-        <h2 class="section__title project__title">select project</h2>
+        <h2
+          class="section__title project__title"
+          data-lang-en="select project"
+          data-lang-fr="projets sélectionnés"
+        ></h2>
         <ul class="project__list">
           <li class="project__item">
             <article>
@@ -311,37 +315,53 @@
         </ul>
       </section>
       <section class="section about" id="about">
-        <h2 class="section__title about__title">More about me</h2>
-        <p class="about__text">
-          I’m passionate about building modern web applications using
-          technologies like JavaScript and React. I believe that great
-          development goes hand-in-hand with thoughtful design, which is why I
-          value consistency and quality in every project.
-        </p>
-        <p class="about__text">
-          After a successful career as a wine advisor, I transitioned into web
-          development. This change has allowed me to develop strong skills in
-          listening, teamwork, and managing complex situations, while enhancing
-          my autonomy and problem-solving abilities.
-        </p>
-        <p>
-          This new chapter of my career allows me to apply the transferable
-          skills I’ve gained throughout my journey to my work as a developer.
-        </p>
+        <h2
+          class="section__title about__title"
+          data-lang-en="More about me"
+          data-lang-fr="Faisons connaissance"
+        ></h2>
+        <p
+          class="about__text"
+          data-lang-en="I’m passionate about building modern web applications using
+        technologies like JavaScript and React. I believe that great
+        development goes hand-in-hand with thoughtful design, which is why I
+        value consistency and quality in every project."
+          data-lang-fr="Je suis passionné par la création d'applications web modernes en utilisant des technologies comme JavaScript et React. Je crois qu'un bon développement va de pair avec un design réfléchi, c'est pourquoi je mets un point d'honneur à la cohérence et à la qualité dans chaque projet."
+        ></p>
+        <p
+          class="about__text"
+          data-lang-en="After a successful career as a wine advisor, I transitioned into web
+        development. This change has allowed me to develop strong skills in
+        listening, teamwork, and managing complex situations, while enhancing
+        my autonomy and problem-solving abilities."
+          data-lang-fr="Après une carrière réussie en tant que conseiller en vin, je me suis reconverti dans le développement web. Ce changement m’a permis de développer de solides compétences en écoute, travail d’équipe et gestion de situations complexes, tout en renforçant mon autonomie et mes capacités de résolution de problèmes."
+        ></p>
+        <p
+          data-lang-en="This new chapter of my career allows me to apply the transferable
+        skills I’ve gained throughout my journey to my work as a developer."
+          data-lang-fr="Ce nouveau chapitre de ma carrière me permet d'appliquer les compétences transférables que j'ai acquises tout au long de mon parcours à mon travail de développeur."
+        ></p>
       </section>
       <section class="section contact" id="contact">
-        <h2 class="section__title">Connect</h2>
+        <h2
+          class="section__title"
+          data-lang-en="Connect"
+          data-lang-fr="Contact"
+        ></h2>
         <p>
-          Alright, get in touch via
+          <span
+            data-lang-en="Alright, get in touch via"
+            data-lang-fr="N'hésite pas à me contacter sur"
+          ></span>
           <a
             class="link"
             href=""
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit my LinkedIn profile"
-            >Linkedin</a
+            >LinkedIn</a
           >
-          and
+          <span data-lang-en="and" data-lang-fr="et"></span>
           <a
             class="link"
             href=""
@@ -350,18 +370,28 @@
             aria-label="Visit my Twitter profile"
             >Twitter</a
           >
-          or see my code on
+          <span
+            data-lang-en="or see my code on"
+            data-lang-fr="ou à découvrir mon code sur"
+          ></span>
           <a
             class="link"
             href="https://github.com/QuentinDch"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit my GitHub profile"
-            >Github</a
-          >, feel free to send me a message.
+            >GitHub</a
+          >,
+          <span
+            data-lang-en="feel free to send me a message."
+            data-lang-fr="envoie-moi un message quand tu veux !"
+          ></span>
         </p>
         <span class="cube"></span>
-        <span>Prefer email ?</span>
+        <span
+          data-lang-en="Prefer email ?"
+          data-lang-fr="Vous préférez l'email ?"
+        ></span>
         <div class="contact__emailContainer">
           <button class="copy-button" id="copyButton">
             <span class="sr-only"
@@ -370,8 +400,16 @@
             <span class="email-info">
               <span class="email-link link">info@hello.co</span>
               <span class="clipboard-status">
-                <span class="copy-text">Copy to clipboard</span>
-                <span class="copied-status">Copied</span>
+                <span
+                  class="copy-text"
+                  data-lang-en="Copy to clipboard"
+                  data-lang-fr="Copier dans le presse-papiers"
+                ></span>
+                <span
+                  class="copied-status"
+                  data-lang-en="Copied"
+                  data-lang-fr="Copié"
+                ></span>
               </span>
             </span>
           </button>
