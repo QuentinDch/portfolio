@@ -59,13 +59,13 @@
 }
 
 .navbar__menu-item a:hover span {
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1ms 500ms;
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1ms 400ms;
   transform: translateY(-25rem);
   opacity: 1;
 }
 
 .navbar__menu-item a:hover::after {
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0);
   opacity: 1;
 }
