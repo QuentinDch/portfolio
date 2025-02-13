@@ -2,7 +2,7 @@
 
 .profile {
   &__title {
-    font-size: 40rem;
+    font-size: 45rem;
     line-height: 1.25em;
 
     @media screen and (max-width: 767px) {
@@ -13,5 +13,9 @@
   }
   &__text {
     max-width: 100%;
+    padding-top: 20rem;
+    @media screen and (max-width: 767px) {
+      padding-top: 0;
+    }
   }
 }
