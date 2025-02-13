@@ -11,11 +11,4 @@
       margin-bottom: 30rem;
     }
   }
-  &__text {
-    max-width: 100%;
-    padding-top: 20rem;
-    @media screen and (max-width: 767px) {
-      padding-top: 0;
-    }
-  }
 }
