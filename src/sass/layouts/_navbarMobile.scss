@@ -18,6 +18,7 @@
     color: $color-light;
     pointer-events: none;
     clip-path: inset(0 0 100% 0);
+
     transition-property: clip-path;
     transition-duration: 800ms;
     transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);

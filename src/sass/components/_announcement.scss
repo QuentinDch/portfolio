@@ -12,7 +12,6 @@
   background-color: $color-medium-dark;
   opacity: 1;
   @include flex-center;
-  text-align: center;
 
   transition-delay: 0s;
   transition-property: opacity, translate;

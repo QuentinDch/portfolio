@@ -4,11 +4,11 @@
 
 .navbar {
   @include flex-between;
+  position: relative;
   font-size: 16rem;
   line-height: 24rem;
   letter-spacing: -0.02em;
   color: $color-light;
-  position: relative;
 
   &__title {
     @media screen and (max-width: 767px) {
@@ -18,27 +18,27 @@
 
   &__menu {
     display: flex;
-    gap: 18rem;
     flex-direction: row;
   }
 }
 
 .navbar__menu-item {
   position: relative;
-  padding-right: 20rem;
+  margin: 0 20rem;
   @media screen and (max-width: 767px) {
-    margin: 12.5rem 0;
+    margin: 10rem 0;
   }
 }
 
 .navbar__menu-item a {
   text-transform: capitalize;
+  line-height: normal;
   position: relative;
   overflow: hidden;
-  line-height: 30rem;
 
   @media screen and (max-width: 767px) {
     font-size: 30rem;
+    line-height: 35rem;
   }
 }
 
@@ -47,8 +47,12 @@
   position: absolute;
   left: 0;
   width: 100%;
-  transform: translateY(35rem);
+  transform: translateY(20rem);
   opacity: 0.7;
+
+  @media screen and (max-width: 767px) {
+    transform: translateY(35rem);
+  }
 }
 
 .navbar__menu-item a span {
@@ -56,17 +60,31 @@
   display: inline-block;
   transform: translateY(0);
   opacity: 0.7;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition-property: opacity;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar__menu-item a:hover span {
-  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1), opacity 1ms 400ms;
-  transform: translateY(-35rem);
+  transform: translateY(-20rem);
   opacity: 1;
+
+  transition-property: transform, opacity;
+  transition-duration: 500ms, 1ms;
+  transition-timing-function: cubic-bezier(0.6, 0, 0.2, 1), ease;
+  transition-delay: 0ms, 500ms;
+
+  @media screen and (max-width: 767px) {
+    transform: translateY(-35rem);
+  }
 }
 
 .navbar__menu-item a:hover::after {
-  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(0);
   opacity: 1;
+
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.6, 0, 0.2, 1);
 }
