@@ -10,6 +10,12 @@ export function initHamburgerButton() {
     togglerButton.setAttribute("aria-expanded", !expanded);
     togglerButton.classList.toggle("active", !expanded);
     navigation.classList.toggle("active", !expanded);
+
+    if (navigation.classList.contains("active")) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
   });
 
   navLinks.forEach((link) => {
@@ -21,6 +27,8 @@ export function initHamburgerButton() {
 
         togglerButton.classList.remove("active");
         navigation.classList.remove("active");
+
+        document.body.classList.remove("no-scroll");
 
         setTimeout(() => {
           document
