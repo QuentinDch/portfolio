@@ -11,7 +11,8 @@
   letter-spacing: -0.02em;
   color: $color-light;
 
-  &__profile__images {
+  &__profile {
+    position: relative;
     @media screen and (max-width: 767px) {
       display: none;
     }
@@ -30,6 +31,7 @@
   overflow: hidden;
   position: relative;
   background-color: oklch(96.62% 0.0356 100.12);
+  cursor: pointer;
 }
 
 .navbar__profile__image {
@@ -70,6 +72,23 @@
     transition-duration: 400ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+
+.navbar__profile__texts {
+  padding-top: 6rem;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: $color-accent;
+  font-size: 13rem;
+  font-weight: 200;
+  letter-spacing: -0.025em;
+  line-height: 1.05em;
+}
+
+.navbar__profile__text-title {
+  font-weight: 600;
 }
 
 .navbar__menu-item {

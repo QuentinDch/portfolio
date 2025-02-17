@@ -40,10 +40,12 @@
   height: max-content;
 }
 
-.email-link:hover + .clipboard-status {
-  clip-path: inset(0px);
+@media screen and (hover: hover) {
+  .email-link:hover + .clipboard-status {
+    clip-path: inset(0px);
 
-  transition-duration: 350ms;
+    transition-duration: 350ms;
+  }
 }
 
 .copy-text {

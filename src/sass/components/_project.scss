@@ -15,8 +15,10 @@
   counter-reset: comptlist;
 }
 
-.project__list:has(.project__item:hover) .project__item:not(:hover) {
-  filter: blur(2px);
+@media screen and (hover: hover) {
+  .project__list:has(.project__item:hover) .project__item:not(:hover) {
+    filter: blur(2px);
+  }
 }
 
 .project__item {
@@ -42,10 +44,12 @@
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.project__item:hover::before {
-  transition-duration: 850ms;
-  transform-origin: 0 0;
-  transform: scaleX(1);
+@media screen and (hover: hover) {
+  .project__item:hover::before {
+    transition-duration: 850ms;
+    transform-origin: 0 0;
+    transform: scaleX(1);
+  }
 }
 
 .project__item::after {
@@ -75,11 +79,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project__item:hover .icon-wrapper {
-  transform: translate(0);
-  opacity: 1;
+@media screen and (hover: hover) {
+  .project__item:hover .icon-wrapper {
+    transform: translate(0);
+    opacity: 1;
 
-  transition-duration: 350ms, 350ms;
+    transition-duration: 350ms, 350ms;
+  }
 }
 
 .icon-wrapper svg {
@@ -108,8 +114,10 @@
   color: $color-accent;
 }
 
-.project__item:hover .arrow-wrapper {
-  transform: scale(1);
+@media screen and (hover: hover) {
+  .project__item:hover .arrow-wrapper {
+    transform: scale(1);
+  }
 }
 
 .project__link {
@@ -130,8 +138,10 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project__item:hover .project__item-title {
-  transform: translateX(18rem);
+@media screen and (hover: hover) {
+  .project__item:hover .project__item-title {
+    transform: translateX(18rem);
 
-  transition-duration: 300ms;
+    transition-duration: 300ms;
+  }
 }
