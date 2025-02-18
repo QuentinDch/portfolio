@@ -9,6 +9,7 @@ import { clipboard } from "./components/clipboard.js";
 import { annoucementBar } from "./components/annoucementBar.js";
 import { initHamburgerButton } from "./components/menuToggler.js";
 import { languageToggler } from "./components/languageToggler.js";
+import "./components/moveText.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Portfolio loaded successfully!");

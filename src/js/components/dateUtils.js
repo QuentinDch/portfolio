@@ -1,7 +1,8 @@
 // dateUtils.js
 
+const yearElement = document.getElementById("year");
+
 export function initializeFooterDate() {
-  const yearElement = document.getElementById("year");
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
   }

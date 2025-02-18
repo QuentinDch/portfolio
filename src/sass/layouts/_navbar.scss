@@ -31,7 +31,6 @@
   overflow: hidden;
   position: relative;
   background-color: oklch(96.62% 0.0356 100.12);
-  cursor: pointer;
 }
 
 .navbar__profile__image {
@@ -76,15 +75,21 @@
 
 .navbar__profile__texts {
   padding-top: 6rem;
-  display: none;
   position: absolute;
   top: 100%;
+  width: max-content;
   left: 0;
   color: $color-accent;
   font-size: 13rem;
   font-weight: 200;
   letter-spacing: -0.025em;
   line-height: 1.05em;
+  opacity: 0;
+  clip-path: inset(0 100% 0 100%);
+
+  transition-property: opacity, clip-path;
+  transition-duration: 500ms, 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar__profile__text-title {
