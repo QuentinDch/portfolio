@@ -27,7 +27,7 @@
 .navbar__profile__images {
   width: 100rem;
   height: 100%;
-  border-radius: 10rem;
+  // border-radius: 10rem;
   overflow: hidden;
   position: relative;
   background-color: oklch(96.62% 0.0356 100.12);
@@ -36,6 +36,7 @@
 .navbar__profile__image {
   opacity: 0;
   object-fit: cover;
+  object-position: 50% 50%;
   width: 100%;
   height: 100%;
 }
